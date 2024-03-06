@@ -1,0 +1,43 @@
+#about-me {
+    background-color: #333;
+    padding: 100px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #eee;
+}
+
+#about-me .content-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+#about-me h2 {
+    color: #F9E79F; 
+    font-size: 28px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#about-me h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 70px;
+    background: #F9E79F;
+}
+
+#about-me p {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 700px;
+}
