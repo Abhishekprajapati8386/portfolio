@@ -1,27 +1,3 @@
-// // App.js
-// import React, { useState } from 'react';
-// import WebProject from './component/webproject';  // Adjust path accordingly
-// import Project from './component/projects';              // Adjust path accordingly
-
-// function App() {
-//   const [showContent, setShowContent] = useState('default');
-
-//   const handleButtonClick = () => {
-//     setShowContent('webproject');
-//   }
-
-//   return (
-//     <section id="projects" className="py-5 m-4 rounded" style={{ backgroundColor: '#333' }}>    
- 
-//         {showContent === 'default' && <Project onButtonClick={handleButtonClick} />}
-//         {showContent === 'webproject' && <WebProject />}
-//     </section>
-//   );
-// }
-
-// export default App;
-
-
 
 import './App.css';
 import Header from './component/header';
@@ -38,16 +14,20 @@ import React, { useState } from 'react';
 
 function App() {
   const [showContent, setShowContent] = useState('about');
-  const handleAboutClick = () => {
+  const handleAboutClick = (event) => {
+    event.preventDefault();
     setShowContent('about');
   }
-  const handleProjectClick = () => {
+  const handleProjectClick = (event) => {
+    event.preventDefault();
     setShowContent('project');
   }
-  const handleSkillsClick = () => {
+  const handleSkillsClick = (event) => {
+    event.preventDefault();
     setShowContent('skills');
   }
-  const handleContactClick = () => {
+  const handleContactClick = (event) => {
+    event.preventDefault();
     setShowContent('contact');
   }
   return (
@@ -64,21 +44,3 @@ function App() {
 }
 
 export default App;
-
-
-// const [showWebProjects, setShowWebProjects] = useState(false);
-
-//   return (
-//     <section id="projects-section" className="py-5 m-4 rounded" style={{ backgroundColor: '#333' }}>
-//       <div className="container">
-//         <h2 className="text-center text-light mb-4">My Projects</h2>
-
-//         <a href="#" onClick={(e) => { e.preventDefault(); setShowWebProjects(!showWebProjects); }}>
-//           {showWebProjects ? "Show General Projects" : "Show Web Projects"}
-//         </a>
-
-//         {showWebProjects ? <WebProjects /> : <Projects />}
-//       </div>
-//     </section>
-//     </div>
-//   );
