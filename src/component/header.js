@@ -4,10 +4,10 @@ function Header({About, Project, Skills, Contact}) {
        {
             <nav>
                 <ul>
-                    <li><a href="" onClick={About} >    About    </a></li>
-                    <li><a href="" onClick={Project}>   Projects </a></li>
-                    <li><a href=""   onClick={Skills} >   Skills   </a></li>
-                    <li><a href=""  onClick={Contact} >  Contact  </a></li>
+                    <li><a href="#" onClick={About} >    About    </a></li>
+                    <li><a href="#" onClick={Project}>   Projects </a></li>
+                    <li><a href="#"   onClick={Skills} >   Skills   </a></li>
+                    <li><a href="#"  onClick={Contact} >  Contact  </a></li>
                 </ul>
             </nav>
         }

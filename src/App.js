@@ -5,12 +5,15 @@ import About from './component/about';
 import Project from './component/projects';
 import Skills from './component/skills';
 import Contact from './component/contact';
-import WebProject from './component/webproject';
+import Sidebar from './component/sidebar';
+//import WebProject from './component/webproject';
 import './styles/header.css';
 import './styles/about.css';
 import './styles/project.css';
 import './styles/test.css';
+import './styles/sidebar.css';
 import React, { useState } from 'react';
+
 
 function App() {
   const [showContent, setShowContent] = useState('about');
@@ -39,6 +42,7 @@ function App() {
           {showContent === 'skills' && <Skills />}
           {showContent === 'contact' && <Contact />}
       </section>
+      <Sidebar/>
     </div>
   );
 }
